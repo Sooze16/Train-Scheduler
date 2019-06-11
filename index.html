@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Schedule</title>
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/train.css">
+    <link rel="stylesheet" href="assets/images/">
+</head>
+
+
+<body>
+    <div class="container">
+        <!-- <div class="jumbotron"></div> -->
+        <h1 class="text-center" id="heading">King's Cross Station</h1>
+        <h2 class="text-center" id="sub-heading">Serving Magical<br> &
+            <br> Muggle Folk<br> Since 1850</h2>
+        <p class="pull-right" id="time"></p>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-9">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Train Schedule</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table table-hover" id="train-table">
+                        <thead>
+                            <tr>
+                                <th>Train Name</th>
+                                <th>Destination</th>
+                                <th class="text-center">Frequency</th>
+                                <th class="text-center">Next Arrival</th>
+                                <th class="text-center">Minutes Away</th>
+                                <th class="text-center">Remove</th>
+                            </tr>
+                        </thead>
+                        <tbody id="train-table-rows">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-3">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Add New Train</h3>
+                    <div>
+                        <div class="panel-body">
+                            <form>
+                                <div class="form-group">
+                                    <label>Train Name</label>
+                                    <input type="text" class="form-control form-field" id="train-name">
+                                </div>
+                                <div class="form-group">
+                                    <label>Destination</label>
+                                    <input type="text" class="form-control form-field" id="destination">
+                                </div>
+                                <div class="form-group">
+                                    <label>First Train Time: HH:mm - military time</label>
+                                    <input type="text" class="form-control form-field" id="first-train">
+                                </div>
+                                <div class="form-group">
+                                    <label>Frequency (min)</label>
+                                    <input type="text" class="form-control form-field" id="frequency">
+                                </div>
+
+                                <button type="submit" class="btn btn-default" id="submit">Add Train</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="assets/javascript/train.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-app.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-database.js"></script> -->
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+body {
+    background-image: url(../images/platform934-homepage-announcement-banner_2880x.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+h1 {
+    color: rgb(155, 27, 27);
+    font-size: 29px;
+    margin-left: -8px;
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(61, 36, 61);
+    font-weight: bold;
+}
+
+h3 {
+    color: #ffffff;
+}
+
+th {
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+table {
+    margin-top: 60px;
+}
