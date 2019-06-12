@@ -10,6 +10,7 @@ Harry Potter themed train schedule.  User may add a train by entering the time, 
 ## Technology 
 - HTML
 - CSS
+- Bootstrap
 - JavaScript
 - JQuery
 - [Firebase](https://firebase.google.com/)
